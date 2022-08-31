@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "93425681-69ba-4b7b-98ad-9dd5926e4f1f",
+		"name": "Chuck Norris Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23099816"
+	},
+	"item": [
+		{
+			"name": "Get Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/categories",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.chucknorris.io/jokes/random?category={category}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/random?category={category}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"random"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "{category}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.chucknorris.io/jokes/search?query={query}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/search?query={query}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "{query}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
